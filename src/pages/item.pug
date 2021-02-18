@@ -1,0 +1,149 @@
+include restricted/header.pug
+    link(rel="stylesheet" href="styles/item.css")
+    title Карточка товара
+.contant
+    .contant__item
+        .contant__item-buy
+            h1.title Maison Margiela Fusion Low Sneakers
+            p.subtitle Кроссовки
+            .item__buy
+                .item__buy-color
+                    p Цвет
+                    .item__buy-sizeColor 
+                        button.item__sku-active Белый с розовым
+                        button.item__sku-normal Белый с зелёным
+                .item__buy-size
+                    p Размер US
+                    .item__buy-sizeButtons
+                        button.item__sku-normal 6
+                        button.item__sku-normal 6,5
+                        button.item__sku-normal 7
+                        button.item__sku-normal 9               
+                .item__buy-tableSize               
+                    a.show-popup(href="#text-popup" data-effect="mfp-zoom-in") Таблица размеров
+                #text-popup.white-popup.mfp-with-anim.mfp-hide
+                    .text-popup__text
+                    h1.title Таблица размеров
+                    .table
+                        .tabel__US
+                            h3 US
+                            p  4
+                            p  4,5
+                            p  5
+                            p  5,5
+                            p  6
+                            p  6,5
+                            p  7  
+                            p  7,5
+                        .tabel__UK
+                            h3 UK
+                            p  3,5
+                            p  4
+                            p  4,5
+                            p  6
+                            p  5,5
+                            p  6
+                            p  6,5  
+                            p  7
+                        .tabel__EU
+                            h3 EU
+                            p  36
+                            p  37
+                            p  38
+                            p  39
+                            p  40
+                            p  41
+                            p  42  
+                            p  43
+                    button.mfp-close(title="Close (Esc)" type="button")
+                        img.mfp-close.close(src='assets/svg/cross.svg' alt='cross')
+                button.item__buy-primary Купить, 92 000 ₽
+            .item__about
+                .item__about-top
+                    .prop
+                        p.title Материал
+                        p.contant Кожа, текстиль
+                    .prop
+                        p.title Страна-производитель
+                        p.contant Италия
+                .item__about-contant
+                    p.title Описание
+                    .item__about-text
+                        p.contant Деконструктивный и авангардный дизайн с уникальными концепциями и нетрадиционным мастерством. 
+                        p.contant В качестве материала используются два вида кожи. Верх дополнен деталями из сетчатого материала и текстиля. 
+                        p.contant Грубые и многослойные кроссовки показывают отличие от традиционного аккуратного стиля создания обуви. Они оснащены раскрашенной вручную резиновой подошвой с брызгами и потеками. 
+                        p.contant Оригинальная слегка асимметричная система шнуровки и фирменный стежок на заднике завершают уникальный внешний вид.
+                .item__about-details
+                    p.title Детали
+                    p.contant — Два вида кожи
+                    p.contant — Детали из текстиля
+                    p.contant — Неординарная шнуровка
+                    p.contant — Перфорация на мыске
+                    p.contant — Стежок на заднике
+                    p.contant — Фигурная резиновая подошва
+                    p.contant — Цепкая подметка
+                    p.contant — Окрашивание с брызгами и потеками
+                    p.contant — Пестрая расцветка
+        .contant__item-pictures
+            .slider-for
+                img(data-src='assets/img/item/img.png' src='https://res.cloudinary.com/dknlymwk2/image/upload/c_scale,w_4/v1613411369/img_kocixy.png' alt='')
+                img(src='assets/img/item/image_2.png' alt='')
+                img(src='assets/img/item/image_3.png' alt='')
+                img(src='assets/img/item/image_4.png' alt='')
+            .slider-nav
+                img(src='assets/img/item/img.png' alt='')
+                img(src='assets/img/item/image_2.png' alt='')
+                img(src='assets/img/item/image_3.png' alt='')
+                img(src='assets/img/item/image_4.png' alt='')
+    .contant__bottom
+        h1.contant__bottom-title Вам может быть интересно
+        .contant__bottom-slider
+            .item
+                img(class='lazy' src='assets/img/item/item__slider_1.png' alt='')
+                .item__title
+                    a(href='#') Maison Margiela Fusion Low Sneakers
+                .item__subtitle Кроссовки
+                .item__sale 92 000 ₽
+            .item
+                img(class='lazy' src='assets/img/item/item__slider_2.png' alt='')
+                .item__title
+                    a(href='#') Maison Margiela Fusion Low Sneakers
+                .item__subtitle Кроссовки
+                .item__sale 92 000 ₽
+            .item
+                img(class='lazy' src='assets/img/item/item__slider_3.png' alt='')
+                .item__title
+                    a(href='#') Maison Margiela Fusion Low Sneakers
+                .item__subtitle Кроссовки
+                .item__sale 92 000 ₽
+            .item
+                img(class='lazy' src='assets/img/item/item__slider_4.png' alt='')
+                .item__title
+                    a(href='#') Maison Margiela Fusion Low Sneakers
+                .item__subtitle Кроссовки
+                .item__sale 92 000 ₽
+            .item
+                img(class='lazy' src='assets/img/item/item__slider_1.png' alt='')
+                .item__title
+                    a(href='#') Maison Margiela Fusion Low Sneakers
+                .item__subtitle Кроссовки
+                .item__sale 92 000 ₽
+            .item
+                img(class='lazy' src='assets/img/item/item__slider_2.png' alt='')
+                .item__title
+                    a(href='#') Maison Margiela Fusion Low Sneakers
+                .item__subtitle Кроссовки
+                .item__sale 92 000 ₽
+            .item
+                img(class='lazy' src='assets/img/item/item__slider_3.png' alt='')
+                .item__title
+                    a(href='#') Maison Margiela Fusion Low Sneakers
+                .item__subtitle Кроссовки
+                .item__sale 92 000 ₽
+            .item
+                img(class='lazy' src='assets/img/item/item__slider_4.png' alt='')
+                .item__title
+                    a(href='#') Maison Margiela Fusion Low Sneakers
+                .item__subtitle Кроссовки
+                .item__sale 92 000 ₽
+include restricted/footer.pug

@@ -1,0 +1,86 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(name="description" content="Тест")
+        link(rel="preload" href="assets/fonts/PTSans/ptsans.woff2" as="font" crossorigin)
+        link(rel="stylesheet" href="styles/style.css")
+        link(rel="stylesheet" href="styles/checkout.css")
+        title Оформление заказа
+    body
+    .contant
+        h1.contant__title Фетч 
+            span • 
+            | Оформление заказа
+        .contant__chechout
+            .contant__chechout-cart
+                .items
+                    .items__cart
+                        img(src='assets/img/checkout/item-1.png' alt='card')
+                        .items__cart-into
+                            h3.title Maison Margiela Fusion Low Sneakers
+                            p.subtitle Кроссовки
+                            p.sale 92 000 ₽
+                    .items__cart
+                        img(src='assets/img/checkout/item-2.png' alt='card')
+                        .items__cart-into
+                            h3.title Maison Margiela Fusion Low Sneakers
+                            p.subtitle Кроссовки
+                            p.sale 92 000 ₽
+                    .items__cart
+                        img(src='assets/img/checkout/item-3.png' alt='card')
+                        .items__cart-into
+                            h3.title Maison Margiela Fusion Low Sneakers
+                            p.subtitle Кроссовки
+                            p.sale 92 000 ₽
+                    .items__cart
+                        img(src='assets/img/checkout/item-3.png' alt='card')
+                        .items__cart-into
+                            h3.title Maison Margiela Fusion Low Sneakers
+                            p.subtitle Кроссовки
+                            p.sale 92 000 ₽
+                .bottom
+                    h3.bottom__price                             
+                        span.result 276 000
+                            | ₽
+                    p.bottom__subprice Доставка бесплатно
+            .contant__chechout-form
+                form.inputs
+                    .inputs__selection
+                        .inputs__selection-row
+                            p Эл. почта
+                            .inputs__email
+                                input#email(placeholder="petrov@yandex.ru" type="email" name='email')
+                                p.subtext Пришлём чеки и трек-номер
+                                p.error Введите email
+                        .inputs__selection-row
+                            p Телефон
+                            .inputs__phone
+                                input#phone(placeholder="+7 999 275-12-37" type="tel" name='tel')
+                                p.subtext Менеджер позвонит, чтобы подтвердить заказ
+                                p.error Введите Ваш телефон
+                    .inputs__selection
+                        .inputs__selection-row
+                            p Город
+                            input#city(placeholder="Москва")
+                        .inputs__selection-row
+                            p Адрес
+                            textarea#adress(placeholder="Тимирязевская, 32, квартира 99, вход со двора")
+                    .inputs__bottom
+                        p Бесплатная доставка курьером. Оплата картой онлайн.
+                        button.inputs__bottom-price Оформить заказ, 
+                            span.result 276 000
+                                | ₽
+        .contant__bottom
+            p.contant__bottom-text © Фетч-команда, 2019
+            p.contant__bottom-text 8 800 912-11-42, звонок бесплатный
+            p.contant__bottom-text 
+                a(href='#') shop@fetch.ru
+            p.contant__bottom-text
+                a(href='#') Правила обработки персональных данных
+        .ellipse
+            p#goods
+    script(src="https://code.jquery.com/jquery-3.5.1.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")
+    script(src="scripts/index.js")

@@ -1,0 +1,102 @@
+include restricted/header.pug
+  link(rel="stylesheet" href="styles/homepage.css")
+  title Главная
+.header__slider.media
+  .slider__top(data-src="background-image: url(assets/img/homepage/slider__top__sm.png)" style='background-image: url(https://res.cloudinary.com/dknlymwk2/image/upload/c_scale,h_4/v1613409736/slider__top__sm_pzj5ko.png)')
+    .slider__top-link
+      a(href='#') Распродажа до −15%
+  .slider__top(data-src="background-image: url(assets/img/homepage/slider__top__sm.png)" style='background-image: url(https://res.cloudinary.com/dknlymwk2/image/upload/c_scale,h_4/v1613409736/slider__top__sm_pzj5ko.png)')
+    .slider__top-link
+      a(href='#') Распродажа до −15%
+.header__slider
+  .slider__top(style="background-image: url(assets/img/homepage/slider__top__1.jpg)")
+    .slider__top-link
+      a(href='#') Reebok Aztrek Double
+  .slider__top(style="background-image: url(assets/img/homepage/slider__top__2.jpg)")
+    .slider__top-link(style='margin-left: 152px')
+      a(href='#') Nike ACG: навстречу новым открытиям
+.contant
+  .contant__catalog
+    .contant__catalog-about
+      p 
+        b Фетч 
+        | — мультибрендовый магазин модной одежды.
+      p Следим за трендами и часто обновляем ассортимент.
+      p Доставляем по Москве за день, по России — за неделю.
+    .contant__catalog-categories
+      ul
+        li.tittle
+          a.active(href='#') Для мужчин
+        li 
+          a(href='#') Верхняя одежда
+        li 
+          a(href='#') Рубашки и поло
+        li 
+          a(href='#') Брюки и джинсы
+        li 
+          a(href='#') Бельё и носки
+      ul
+        li.tittle
+          a.active(href='#') Для женщин
+        li 
+          a(href='#') Верхняя одежда
+        li 
+          a(href='#') Рубашки и поло
+        li 
+          a(href='#') Трикотаж
+        li 
+          a(href='#') Платья и юбки
+        li 
+          a(href='#') Бельё и носки
+      ul
+        li.tittle
+          a.active(href='catalog.html') Обувь
+        li 
+          a(href='#') Кроссовки и кеды
+        li 
+          a(href='#') Ботинки
+      ul
+        li.tittle
+          a.active(href='#') Аксессуары
+        li 
+          a(href='#') Сумки и рюкзаки
+        li 
+          a(href='#') Часы
+        li 
+          a(href='#') Бижутерия
+        li 
+          a(href='#') Средства для ухода
+      ul
+        li.tittle
+          a.active(href='#') Скидки
+        li 
+          a(href='#') Летняя распродажа
+        li 
+          a(href='#') Коллекция 2018
+  .contant__wrapper
+    .contant__wrapper-lookbuck
+      h1.tittle
+        a(href='#') Лукбук, лето 2019
+      p.subtittle Стильные образы для тёплых деньков
+      img(class='lazy' data-src='assets/img/homepage/lookbuck.png' src="" alt='lookbuck')
+      .subwrapper
+        h1.tittle 
+          a(href='#') Выбор редакции: часы
+        p.subtittle 
+          a(href='#') ТОП-5 лучших предложений по версии администрации Фетч
+    .contant__wrapper-sneakers
+      h1.tittle
+        a(href='#') Новая коллекция adidas Originals
+      p.subtittle Десять крутейших кроссовок
+      img(class='lazy' data-src='assets/img/homepage/sneakers.png' src="assets/img/homepage/sneakers.png" alt='sneakers')
+  .contant__preorder
+    .contant__preorder-text
+      h1.tittle
+        a(href='#') Предзаказ: Maison Margiela Fusion
+      p.sale От 92 000 ₽
+    .contant__preorder-images
+      span
+        img(src='assets/img/homepage/item1.png' alt='item1')
+      img(src='assets/img/homepage/item2.png' alt='item2')
+      img(src='assets/img/homepage/item3.png' alt='item3')
+include restricted/footer.pug
