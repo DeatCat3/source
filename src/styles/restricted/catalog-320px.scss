@@ -1,0 +1,80 @@
+@media screen and (min-width:320px) and (max-width:1199px){
+@import 'header-320px.scss';
+@import 'footer-320px.scss';
+.contant__catalog{display: none;}
+.contant__catalog.media{display: block}
+.contant{
+    .contant__top{
+        background-color: black;
+        height: 160px;
+        .contant__top-title{
+            color: white;
+            margin: auto 5.3125%;
+            padding-top: 16px;
+        }
+    }
+    .contant__catalog.media{
+        margin: -79px 5% 0 5%;
+        max-width: 1199px;
+        min-width: 288px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .item{
+            width: 136px;
+            margin-bottom: 32px;
+            img{
+                margin-bottom: 8px; 
+                width: 136px; 
+                height: 136px;
+            }
+            .item__title{
+                width: 136px;
+                font-size: 13px; 
+                font-weight: 700;
+                a{color: black;}
+                a:hover{color: #4541FE;}
+            }
+            .item__subtitle{
+                font-size: 13px;
+                margin-top: 4px;
+            }
+            .item__sale{
+                font-weight: 700;
+                margin-top: 12px
+            }
+        }
+    }
+    .contant__pagination{
+        margin-top: 8px;
+        margin-left: 5%;
+        margin-bottom: 64px;
+        .contant__pagination-title{
+            font-size: 13px;
+            margin-bottom: 4px;
+            color: #666666;
+        }
+        .contant__pagination-pages{
+            width: 182px;
+            line-height: 31px;
+            font-size: 16px;
+            color: #666666;
+            display: flex;
+            justify-content: space-between;
+            a{
+                color: #666666;
+                text-decoration: none;
+            }
+            a.active{
+                font-size: 24px; 
+                color: black; 
+                font-weight: 700; 
+                text-decoration: none;
+            }
+            a.active:hover{color: black;}
+            a:hover{color: #4541FE}
+            a:visited{font-size: 24px; }
+        }
+    }
+}
+}

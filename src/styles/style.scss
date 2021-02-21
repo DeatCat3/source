@@ -1,0 +1,21 @@
+﻿*{padding: 0; margin: 0; outline: none;}
+body{font-family: 'PT Sans'; max-width: 1440px; margin: 0 auto;}
+a:hover{cursor: url('/assets/svg/cursor.svg'), auto;}
+@import '../vendor/slick.scss';
+@import '../vendor/magnific.scss';
+@import '../restricted/font.scss';
+@import '../restricted/slider.scss';
+@import '../restricted/popup.scss';
+
+//-@import './parts/homepage.scss';
+//-@import './parts/homepage-320px.scss';
+//-@import './parts/about.scss';
+//-@import './parts/about-320px.scss';
+//-@import './parts/catalog.scss';
+//-@import './parts/catalog-320px.scss';
+//-@import './parts/item.scss';
+//-@import './parts/item-320px.scss';
+//-@import './parts/checkout.scss';
+//-@import './parts/checkout-320px.scss';
+//-@import './parts/checkout-complete.scss';
+//-@import './parts/checkout-complete-320px.scss';

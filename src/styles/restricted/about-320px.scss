@@ -1,0 +1,46 @@
+@media screen and (min-width:320px) and (max-width:1199px){
+@import 'header-320px.scss';
+@import 'footer-320px.scss';
+.contant__title{
+    margin-top: 24px;
+    margin-left: 5.3125%;
+    margin-bottom: 24px
+}
+.contant__wrapper{
+    display: flex;
+    flex-direction: column;
+    .contant__wrapper-about{
+        display: flex;
+        flex-direction: column;
+        min-width: 294px;
+        font-size: 18px;
+        margin-left: 5%;
+        margin-right: 3.125%;
+        p{margin-bottom: 10px;}
+    }
+    .contant__wrapper-plate{
+        background-color: #F2F2F2;
+        padding: 16px 3.125% 0;
+        .title{ margin-bottom: 16px}
+        .contacts{
+            margin-bottom: 30px;
+            .email{color:black}
+            .email:hover{color:red}
+            .phone{
+                margin-top: 11px;
+                font-weight: 700;
+            }
+            .subtitle{font-size: 13px}
+        }
+        .requisite{
+            display: flex;
+            flex-direction: column;
+            .requisite__bank{
+                p{margin-bottom: 0;}
+                margin-bottom: 24px;
+            }
+            p{margin-bottom: 24px}
+        }
+    }
+}
+}

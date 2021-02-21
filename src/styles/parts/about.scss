@@ -1,0 +1,64 @@
+*{padding: 0; margin: 0; outline: none}
+//*{border: 1px solid red;}
+body{font-family: 'PT Sans'; max-width: 1440px; margin: 0 auto;}
+a:hover{cursor: url('../assets/svg/cursor.svg'), auto;}
+@import '../vendor/slick.scss';
+@import '../vendor/magnific.scss';
+@import '../restricted/font.scss';
+@import '../restricted/slider.scss';
+@import '../restricted/popup.scss';
+@import '../restricted/icons.scss';
+@media screen and (min-width:1200px){
+body{display: flex; flex-direction: column; justify-content: space-between; }
+@import '../restricted/header.scss';
+@import '../restricted/footer.scss';
+.contant{
+    margin: 32px auto 64px auto;
+    width: 1138px;
+    .contant__title{
+        width: 250px;
+        margin-bottom: 32px;
+    }
+    .contant__wrapper{
+        display: flex;
+        justify-content: space-between;
+        .contant__wrapper-about{
+            width: 464px;
+            height: 347px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 18px;
+        }
+        .contant__wrapper-plate{
+            display: flex;
+            flex-direction: column;
+            margin-top: -27px;
+            background-color: #F2F2F2;
+            width: 586px;
+            height: 354px;
+            .title{
+                margin-top: 27px;
+                margin-left: 26px;
+                margin-bottom: 16px;
+            }
+            .contacts{
+                margin-left: 26px;
+                .email{color: black;}
+                .email:hover{color: red;}
+                .phone{margin-top: 11px; font-weight: 700}
+                .subtitle{font-size: 13px; margin-bottom: 30px}
+            }
+            .requisite{
+                height: 158px;
+                width: 500px;
+                margin-left: 26px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between
+            }
+        }
+    }
+}
+}
+@import '../restricted/about-320px.scss';

@@ -1,0 +1,80 @@
+*{padding: 0; margin: 0; outline: none;}
+body{font-family: 'PT Sans'; max-width: 1440px; margin: 0 auto;}
+a:hover{cursor: url('../assets/svg/cursor.svg'), auto;}
+@import '../vendor/slick.scss';
+@import '../vendor/magnific.scss';
+@import '../restricted/font.scss';
+@import '../restricted/slider.scss';
+@import '../restricted/popup.scss';
+@import '../restricted/icons.scss';
+@media screen and (min-width:1200px){
+@import '../restricted/header.scss';
+@import '../restricted/footer.scss';
+.contant{
+    .contant__top{
+        margin-top: 8px;
+        background-color: black;
+        height: 160px;
+        .contant__top-title{
+            color: white;
+            margin: auto 152px;
+            padding-top: 24px;
+        }
+    }
+    .contant__catalog{margin: -63px 232px 16px 152px;}
+    .contant__catalog-row{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 48px;
+        .item{
+            width: 240px;
+            img{margin-bottom: 8px}
+            .item__title{
+                width: 163px;
+                font-weight: 700;
+                a{color: black;}
+                a:hover{color: #4541FE;}
+            }
+            .item__subtitle{
+                font-size: 13px;
+                margin-top: 4px;
+            }
+            .item__sale{
+                font-weight: 700;
+                margin-top: 12px
+            }
+        }
+    }
+    .contant__pagination{
+        margin-left: 152px;
+        margin-bottom: 64px;
+        .contant__pagination-title{
+            font-size: 13px;
+            margin-bottom: 4px;
+            color: #666666;
+        }
+        .contant__pagination-pages{
+            width: 182px;
+            line-height: 31px;
+            font-size: 16px;
+            color: #666666;
+            display: flex;
+            justify-content: space-between;
+            a{
+                color: #666666;
+                text-decoration: none;
+            }
+            a.active{
+                font-size: 24px; 
+                color: black; 
+                font-weight: 700; 
+                text-decoration: none;
+            }
+            a.active:hover{color: black;}
+            a:hover{color: #4541FE}
+            a:visited{font-size: 24px; }
+        }
+    }
+}
+}
+@import '../restricted/catalog-320px.scss';

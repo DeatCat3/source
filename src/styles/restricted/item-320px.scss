@@ -1,0 +1,170 @@
+@media screen and (min-width:320px) and (max-width:1199px){
+    @import 'header-320px.scss';
+    @import 'footer-320px.scss';
+    body{overflow-x:hidden ;}
+    .contant{
+        max-width: 1199px;
+        display: flex;
+        flex-direction: column;
+        .contant__item{
+            display: flex;
+            flex-wrap: wrap-reverse;
+            .contant__item-pictures{
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+                width: 288px;
+                margin-top: 24px;
+            }
+            .contant__item-buy{
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                h1.title{
+                    margin-left: 6.25%;
+                    width: 287px;
+                    font-size: 32px;
+                    font-weight: 700;
+                    margin-bottom: 8px;
+                    margin-top: 24px;
+                }
+                .subtitle{
+                    margin-left: 6.25%;
+                    font-size: 13px;
+                    margin-bottom: 16px;
+                }
+                .item__buy{
+                    background-color: #F2F2F2;
+                    width:305px;
+                    padding: 24px 0 32px 16px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 24px;
+                    button{margin-right: 12px;}
+                    .item__sku-active, .item__sku-normal{
+                        box-sizing: border-box;
+                        border-radius: 8px;
+                        border: 1px solid #DDDDDD;
+                        background-color: #FBFBFB;
+                        color: #666666;
+                        height: 32px;
+                    }
+                    button:hover{
+                        border: 1px solid #666666;
+                        cursor: url('../assets/svg/cursor.svg'), auto;
+                    }
+                    .item__buy-color{
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 24px;
+                        .item__sku-active{
+                            width: 142px;
+                            margin-bottom: 4px;
+                        }
+                        .item__sku-normal{width: 148px;}
+                        p{
+                            width: 80px;
+                            margin-right:20px;
+                            margin-bottom: 8px;
+                        }
+                    }
+                    .item__buy-size{
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 24px;
+                        p{margin-bottom: 8px;}
+                        button{width: 42px;}
+                    }
+                    .item__buy-tableSize{
+                        font-size: 13px;
+                        margin-bottom: 40px;
+                        a{color: black;}
+                        a:hover{color: #4541FE;}
+                    }
+                    .item__buy-primary{
+                        font-weight:700;
+                        width: 167px;
+                        height: 42px;
+                        background: linear-gradient(180deg, #FFC908 0%, #FFBA08 100%);
+                        box-shadow: 0px 0px 15px rgba(255, 146, 17, 0.5);
+                        border-radius: 4px;
+                        border: 1px solid #FFC908;
+                    }
+                    .item__buy-primary:hover{
+                        background: linear-gradient(180deg, #F5BF00 0%, #F0AD00 100%);
+                        cursor: url('../assets/svg/cursor.svg'), auto;
+                        border: 1px solid #F0AD00;
+                        box-shadow: none;
+                    }
+                }
+                .item__about{
+                    display: flex;
+                    flex-direction: column;
+                    width: 288px;
+                    margin-left: 4.989%;
+                    margin-right: 4.989%;
+                    .title{
+                        margin-bottom: 2px;
+                        font-size: 13px;
+                        color: #AFAFAF;
+                        font-weight: 700;
+                    }
+                    .contant{font-size: 18px;}
+                    .item__about-top{
+                        display: flex;
+                        margin-bottom: 24px;
+                        .prop{width: 141px;}
+                    }
+                    .item__about-contant{
+                        display: flex;
+                        flex-direction: column;
+                        width: 288px;
+                        margin-bottom: 24px;
+                        .item__about-text{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            width: 288px;
+                            height: 485px;
+                        }
+                    }
+                    .item__about-details{
+                        margin-bottom: 56px;
+                    }
+                }
+            }
+        }
+        .contant__bottom{
+            margin-left: 12.5%;
+            margin-right: 12.5%;
+            margin-bottom: 40px;
+            .contant__bottom-title{
+                width: 288px;
+                font-size: 25px;
+                margin-bottom: 24px;
+                margin-left: -7.5%;
+            }
+            .item{
+                display: flex;
+                flex-direction: column;
+                width: 240px;
+                img{width: 240px;}
+                .item__title{
+                    width: 163px;
+                    margin-top: 8px;
+                    margin-bottom: 4px;
+                    a{
+                        color: black;
+                        font-weight: 700;
+                    }
+                    a:hover{color: #4541FE}
+                }
+                .item__subtitle{
+                    font-size: 13px;
+                    margin-bottom: 12px;
+                }
+                .item__sale{font-weight: 700;}
+            }
+        }
+    }
+}

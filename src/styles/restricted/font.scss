@@ -1,0 +1,9 @@
+@font-face{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PTSans'),
+    url(../assets/fonts/PTSans/ptsans.woff2) format('woff2'),
+    url(../assets/fonts/PTSans/ptsans.woff) format('woff');
+    font-display: swap;
+}

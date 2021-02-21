@@ -1,0 +1,145 @@
+*{padding: 0; margin: 0; outline: none;}
+body{font-family: 'PT Sans'; max-width: 1440px; margin: 0 auto;}
+a:hover{cursor: url('../assets/svg/cursor.svg'), auto;}
+@import '../vendor/slick.scss';
+@import '../vendor/magnific.scss';
+@import '../restricted/font.scss';
+@import '../restricted/slider.scss';
+@import '../restricted/popup.scss';
+@import '../restricted/icons.scss';
+@media screen and (min-width:1199px){
+@import '../restricted/header.scss';
+@import '../restricted/footer.scss';
+.contant{
+    max-width: 1138px;
+    margin: 0 auto;
+    .contant__catalog{
+        max-width: 1095px;
+        display: flex;
+        justify-content: space-between;
+        .contant__catalog-about{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 18px;
+            max-width: 240px;
+            height: 193px;
+        }
+        .contant__catalog-categories{
+            display: flex;
+            justify-content: space-between;
+            width: 807px;
+            height: 172px;
+            ul{
+                li{
+                    margin-left: 9px;
+                    margin-bottom: 8px;
+                    a{color: #4541FE;}
+                    a:hover{color: red;}
+                }
+                list-style-type: none;
+                .title{
+                    color: #4541FE;
+                    font-size: 18px;
+                    margin-bottom: 12px;
+                    margin-left: 0;
+                    font-weight: bold;
+                    .link{
+                        color: #4541FE;
+                        font-weight: bold;
+                    }
+                    .link:hover{color: red;}
+                }
+            }
+        }
+    }
+    .contant__wrapper{
+        max-width: 1136px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 64px;
+        .contant__wrapper-lookbuck{
+            background-color: #FFA88C;
+            max-width: 464px;
+                height: 320px;
+                .title{
+                    margin-left: 16px;
+                    margin-top: 24px; 
+                    margin-bottom: 8px; 
+                    font-size: 32px;
+                }
+                .subtitle{
+                    position:relative;
+                    z-index: 1;
+                    margin-left: 16px;
+                }
+                a{color: black;}
+                a:hover{color: red;}
+                img{
+                    margin-left: 13.98px; 
+                    margin-top: -40.69px;
+                    position: relative;
+                }
+                .subwrapper{
+                    margin-top: -20px;
+                    background-color: #7482FF;
+                    height: 160px;
+                    .title{margin-left: 16px; padding-top: 24px;}
+                    .subtitle{width: 280px; margin-top: 8px; margin-left: 16px;}
+                    a{color: white;}
+                    a:hover{color: red;}
+                }
+            }
+            .contant__wrapper-sneakers{
+                background-color: #FFE9FD;
+                width: 655px;
+                height: 504px;
+                .title{
+                    position: relative;
+                    margin-top: 24px;
+                    margin-left: 23px;
+                    a{color: black;}
+                    a:hover{color: red;}
+                }
+                .subtitle{
+                    margin-top: 8px;
+                    margin-left: 23px;
+                }
+                img{
+                    margin-left: 30px;
+                    margin-top: -88px;
+                }
+            }
+        }
+    .contant__preorder{
+        height: 480px;
+        background-color: #F2F2F2;
+        margin-top: 24px;
+        margin-bottom: 72px;
+        .contant__preorder-text{
+            display: flex;
+            flex-direction: column;
+            margin-top: 24px;
+            position: relative;
+            .title{
+                margin-top: 24px;
+                margin-bottom: 8px;
+                margin-left: 16px;
+                a{color: black;}
+                a:hover{color: red;}
+            }
+            .sale{margin-left: 16px;}
+        }
+        .contant__preorder-images{
+            height: 480px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            margin-top: -96px;
+            span{margin-left: -184px; width: 500px; height: 500px; margin-top: 0;}
+            img{width: 500px; height: 500px; margin-top: -41px}
+        }
+    }
+}
+}
+@import '../restricted/homepage-320px.scss';
