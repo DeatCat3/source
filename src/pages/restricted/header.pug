@@ -8,25 +8,25 @@ html(lang='ru')
   body
   header
     .header__menu
-      .header__menu-left
-        ul
-          li.active
-            a.active(href='about.html') Фетч
-          li
-            a(href='index.html') Одежда
-          li 
-            a(href='catalog.html') Обувь
-          li 
-            a(href='index.html') Аксессуары
-          li 
-            a(href='index.html') Блог
-          li 
-            a(href='index.html') Мазагин
-          li 
-            a(href='index.html') Доставка и оплата
-      .header__menu-left.media
+      .header__menu-contant
         a.title(href='about.html') Фетч
-        ul.slider-media
+        ul.nav
+          li
+            a(href='index.html') Одежда
+          li 
+            a(href='catalog.html') Обувь
+          li 
+            a(href='index.html') Аксессуары
+          li 
+            a(href='index.html') Блог
+          li 
+            a(href='index.html') Мазагин
+          li 
+            a(href='index.html') Доставка и оплата
+            //- window < 1200px
+      .header__menu-contant-media
+        a.title(href='about.html') Фетч
+        ul.nav
           li
             a(href='index.html') Одежда
           li
@@ -38,8 +38,9 @@ html(lang='ru')
           li 
             a(href='index.html') Мазагин
           li 
-            a(href='index.html') Доставка и оплата
-      .header__menu-right
+            a.span(href='index.html') Доставка и оплата
+          //-
+      .header__menu-linkCart
         a.cart(href="checkout.html")
           figure.icon-cart
           .ellipse

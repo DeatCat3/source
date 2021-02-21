@@ -16,30 +16,14 @@ html(lang='ru')
         .contant__chechout
             .contant__chechout-cart
                 .items
-                    .items__cart
-                        img(src='assets/img/checkout/item-1.png' alt='card')
-                        .items__cart-into
-                            h3.title Maison Margiela Fusion Low Sneakers
-                            p.subtitle Кроссовки
-                            p.sale 92 000 ₽
-                    .items__cart
-                        img(src='assets/img/checkout/item-2.png' alt='card')
-                        .items__cart-into
-                            h3.title Maison Margiela Fusion Low Sneakers
-                            p.subtitle Кроссовки
-                            p.sale 92 000 ₽
-                    .items__cart
-                        img(src='assets/img/checkout/item-3.png' alt='card')
-                        .items__cart-into
-                            h3.title Maison Margiela Fusion Low Sneakers
-                            p.subtitle Кроссовки
-                            p.sale 92 000 ₽
-                    .items__cart
-                        img(src='assets/img/checkout/item-3.png' alt='card')
-                        .items__cart-into
-                            h3.title Maison Margiela Fusion Low Sneakers
-                            p.subtitle Кроссовки
-                            p.sale 92 000 ₽
+                    - var imagePath = ('assets/img/checkout/')
+                    each picture, bedFurniture in ['item-1.png', 'item-2.png', 'item-3.png', 'item-3.png']
+                        .items__cart
+                            img(alt='card' src= imagePath + picture)
+                            .items__cart-into
+                                h3.title Maison Margiela Fusion Low Sneakers
+                                p.subtitle Кроссовки
+                                p.sale 92 000 ₽
                 .bottom
                     h3.bottom__price                             
                         span.result 276 000

@@ -6,202 +6,52 @@ include restricted/header.pug
         h1.contant__top-title Обувь
     .contant__catalog
         .contant__catalog-row
-            .item
-                img(class='lazy' src='assets/img/catalog/row1-img1.png' alt='')
-                .item__title
-                    a(href='item.html') Maison Margiela Fusion Low Sneakers
-                .item__subtitle Кроссовки
-                .item__sale 92 000 ₽
-            .item
-                img(class='lazy' src='assets/img/catalog/row1-img2.png' alt='')
-                .item__title
-                    a(href='item.html') Maison Margiela Fusion Low Sneakers
-                .item__subtitle Кроссовки
-                .item__sale 92 000 ₽
-            .item
-                img(class='lazy' src='assets/img/catalog/row1-img3.png' alt='')
-                .item__title
-                    a(href='item.html') Maison Margiela Fusion Low Sneakers
-                .item__subtitle Кроссовки
-                .item__sale 92 000 ₽
-            .item
-                img(class='lazy' src='assets/img/catalog/row1-img4.png' alt='')
-                .item__title
-                    a(href='item.html') Maison Margiela Fusion Low Sneakers
-                .item__subtitle Кроссовки
-                .item__sale 92 000 ₽
+            - var imagePathw = ('assets/img/catalog/')
+            each picture, bedFurniture in ['row1-img1.png', 'row1-img2.png', 'row1-img3.png', 'row1-img4.png']
+                .item
+                    img(class='lazy' alt='' src= imagePathw + picture)
+                    .item__title
+                        a(href='item.html') Maison Margiela Fusion Low Sneakers
+                    .item__subtitle Кроссовки
+                    .item__sale 92 000 ₽
         .contant__catalog-row
-            .item
-                img(class='lazy' src='assets/img/catalog/row2-img1.png' alt='')
-                .item__title
-                    a(href='item.html') Maison Margiela Fusion Low Sneakers
-                .item__subtitle Кроссовки
-                .item__sale 92 000 ₽
-            .item
-                img(class='lazy' src='assets/img/catalog/row2-img2.png' alt='')
-                .item__title
-                    a(href='item.html') Maison Margiela Fusion Low Sneakers
-                .item__subtitle Кроссовки
-                .item__sale 92 000 ₽
-            .item
-                img(class='lazy' src='assets/img/catalog/row2-img3.png' alt='')
-                .item__title
-                    a(href='item.html') Maison Margiela Fusion Low Sneakers
-                .item__subtitle Кроссовки
-                .item__sale 92 000 ₽
-            .item
-                img(class='lazy' src='assets/img/catalog/row2-img4.png' alt='')
-                .item__title
-                    a(href='item.html') Maison Margiela Fusion Low Sneakers
-                .item__subtitle Кроссовки
-                .item__sale 92 000 ₽
+            - var imagePathw = ('assets/img/catalog/')
+            each picture, bedFurniture in ['row2-img1.png', 'row2-img2.png', 'row3-img3.png', 'row4-img4.png']
+                .item
+                    img(class='lazy' alt='' src= imagePathw + picture)
+                    .item__title
+                        a(href='item.html') Maison Margiela Fusion Low Sneakers
+                    .item__subtitle Кроссовки
+                    .item__sale 92 000 ₽
         .contant__catalog-row
-            .item
-                img(class='lazy' src='assets/img/catalog/row3-img1.png' alt='')
-                .item__title
-                    a(href='item.html') Maison Margiela Fusion Low Sneakers
-                .item__subtitle Кроссовки
-                .item__sale 92 000 ₽
-            .item
-                img(class='lazy' src='assets/img/catalog/row3-img2.png' alt='')
-                .item__title
-                    a(href='item.html') Maison Margiela Fusion Low Sneakers
-                .item__subtitle Кроссовки
-                .item__sale 92 000 ₽
-            .item
-                img(class='lazy' src='assets/img/catalog/row3-img3.png' alt='')
-                .item__title
-                    a(href='item.html') Maison Margiela Fusion Low Sneakers
-                .item__subtitle Кроссовки
-                .item__sale 92 000 ₽
-            .item
-                img(class='lazy' src='assets/img/catalog/row3-img4.png' alt='')
-                .item__title
-                    a(href='item.html') Maison Margiela Fusion Low Sneakers
-                .item__subtitle Кроссовки
-                .item__sale 92 000 ₽
+            - var imagePathw = ('assets/img/catalog/')
+            each picture, bedFurniture in ['row3-img1.png', 'row3-img2.png', 'row3-img3.png', 'row3-img4.png']
+                .item
+                    img(class='lazy' alt='' src= imagePathw + picture)
+                    .item__title
+                        a(href='item.html') Maison Margiela Fusion Low Sneakers
+                    .item__subtitle Кроссовки
+                    .item__sale 92 000 ₽
         .contant__catalog-row
-            .item
-                img(class='lazy' src='assets/img/catalog/row4-img1.png' alt='')
-                .item__title
-                    a(href='item.html') Maison Margiela Fusion Low Sneakers
-                .item__subtitle Кроссовки
-                .item__sale 92 000 ₽
-            .item
-                img(class='lazy' src='assets/img/catalog/row4-img2.png' alt='')
-                .item__title
-                    a(href='item.html') Maison Margiela Fusion Low Sneakers
-                .item__subtitle Кроссовки
-                .item__sale 92 000 ₽
-            .item
-                img(class='lazy' src='assets/img/catalog/row4-img3.png' alt='')
-                .item__title
-                    a(href='item.html') Maison Margiela Fusion Low Sneakers
-                .item__subtitle Кроссовки
-                .item__sale 92 000 ₽
-            .item
-                img(class='lazy' src='assets/img/catalog/row4-img4.png' alt='')
-                .item__title
-                    a(href='item.html') Maison Margiela Fusion Low Sneakers
-                .item__subtitle Кроссовки
-                .item__sale 92 000 ₽
+            - var imagePathw = ('assets/img/catalog/')
+            each picture, bedFurniture in ['row4-img1.png', 'row4-img2.png', 'row4-img3.png', 'row4-img4.png']
+                .item
+                    img(class='lazy' alt='' src= imagePathw + picture)
+                    .item__title
+                        a(href='item.html') Maison Margiela Fusion Low Sneakers
+                    .item__subtitle Кроссовки
+                    .item__sale 92 000 ₽
+    //- window < 1200px
     .contant__catalog.media
-        .item
-            img(class='lazy' src='assets/img/catalog/row1-img1.png' alt='')
-            .item__title
-                a(href='item.html') Maison Margiela Fusion Low Sneakers
-            .item__subtitle Кроссовки
-            .item__sale 92 000 ₽
-        .item
-            img(class='lazy' src='assets/img/catalog/row1-img2.png' alt='')
-            .item__title
-                a(href='item.html') Maison Margiela Fusion Low Sneakers
-            .item__subtitle Кроссовки
-            .item__sale 92 000 ₽
-        .item
-            img(class='lazy' src='assets/img/catalog/row1-img3.png' alt='')
-            .item__title
-                a(href='item.html') Maison Margiela Fusion Low Sneakers
-            .item__subtitle Кроссовки
-            .item__sale 92 000 ₽
-        .item
-            img(class='lazy' src='assets/img/catalog/row1-img4.png' alt='')
-            .item__title
-                a(href='item.html') Maison Margiela Fusion Low Sneakers
-            .item__subtitle Кроссовки
-            .item__sale 92 000 ₽
-        .item
-            img(class='lazy' src='assets/img/catalog/row2-img1.png' alt='')
-            .item__title
-                a(href='item.html') Maison Margiela Fusion Low Sneakers
-            .item__subtitle Кроссовки
-            .item__sale 92 000 ₽
-        .item
-            img(class='lazy' src='assets/img/catalog/row2-img2.png' alt='')
-            .item__title
-                a(href='item.html') Maison Margiela Fusion Low Sneakers
-            .item__subtitle Кроссовки
-            .item__sale 92 000 ₽
-        .item
-            img(class='lazy' src='assets/img/catalog/row2-img3.png' alt='')
-            .item__title
-                a(href='item.html') Maison Margiela Fusion Low Sneakers
-            .item__subtitle Кроссовки
-            .item__sale 92 000 ₽
-        .item
-            img(class='lazy' src='assets/img/catalog/row2-img4.png' alt='')
-            .item__title
-                a(href='item.html') Maison Margiela Fusion Low Sneakers
-            .item__subtitle Кроссовки
-            .item__sale 92 000 ₽
-        .item
-            img(class='lazy' src='assets/img/catalog/row3-img1.png' alt='')
-            .item__title
-                a(href='item.html') Maison Margiela Fusion Low Sneakers
-            .item__subtitle Кроссовки
-            .item__sale 92 000 ₽
-        .item
-            img(class='lazy' src='assets/img/catalog/row3-img2.png' alt='')
-            .item__title
-                a(href='item.html') Maison Margiela Fusion Low Sneakers
-            .item__subtitle Кроссовки
-            .item__sale 92 000 ₽
-        .item
-            img(class='lazy' src='assets/img/catalog/row3-img3.png' alt='')
-            .item__title
-                a(href='item.html') Maison Margiela Fusion Low Sneakers
-            .item__subtitle Кроссовки
-            .item__sale 92 000 ₽
-        .item
-            img(class='lazy' src='assets/img/catalog/row3-img4.png' alt='')
-            .item__title
-                a(href='item.html') Maison Margiela Fusion Low Sneakers
-            .item__subtitle Кроссовки
-            .item__sale 92 000 ₽
-        .item
-            img(class='lazy' src='assets/img/catalog/row4-img1.png' alt='')
-            .item__title
-                a(href='item.html') Maison Margiela Fusion Low Sneakers
-            .item__subtitle Кроссовки
-            .item__sale 92 000 ₽
-        .item
-            img(class='lazy' src='assets/img/catalog/row4-img2.png' alt='')
-            .item__title
-                a(href='item.html') Maison Margiela Fusion Low Sneakers
-            .item__subtitle Кроссовки
-            .item__sale 92 000 ₽
-        .item
-            img(class='lazy' src='assets/img/catalog/row4-img3.png' alt='')
-            .item__title
-                a(href='item.html') Maison Margiela Fusion Low Sneakers
-            .item__subtitle Кроссовки
-            .item__sale 92 000 ₽
-        .item
-            img(class='lazy' src='assets/img/catalog/row4-img4.png' alt='')
-            .item__title
-                a(href='item.html') Maison Margiela Fusion Low Sneakers
-            .item__subtitle Кроссовки
-            .item__sale 92 000 ₽
+        - var imagePath = ('assets/img/catalog/')
+        each picture, bedFurniture in ['row1-img1.png', 'row1-img2.png', 'row1-img3.png', 'row1-img4.png', 'row2-img1.png', 'row2-img2.png', 'row2-img3.png', 'row2-img4.png','row3-img1.png', 'row3-img2.png', 'row3-img3.png', 'row3-img4.png', 'row4-img1.png', 'row4-img2.png', 'row4-img3.png', 'row4-img4.png']
+            .item
+                img(class='lazy' alt='' src= imagePath + picture)
+                .item__title
+                    a(href='item.html') Maison Margiela Fusion Low Sneakers
+                .item__subtitle Кроссовки
+                .item__sale 92 000 ₽
+    //-
     .contant__pagination
         .contant__pagination-title Страницы
         .contant__pagination-pages
