@@ -1,4 +1,3 @@
-// слайдер
 function initSliderHomepage() {
   var $slider = $('.header__slider').slick({
     slidesToShow: 1,
@@ -6,17 +5,10 @@ function initSliderHomepage() {
     nextArrow: "<img src='assets/svg/arr-right.svg' class='arr-right' alt=''>",
     prevArrow: "<img src='assets/svg/arr-left.svg' class='arr-left' alt=''>",
 });
-var bgs = [
-  'none',
-  'linear-gradient(269.92deg, rgba(0, 0, 0, 0) 0.07%, #0C0C0C 99.93%)',
-];
-var color = ['black', 'white'];
-$slider.on('afterChange', function(e, slick, index) {
-  $('header').css('background',  bgs[index]);
-  $('.header__menu a, .icon-cart').css('color', color[index]);
+$slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+  $('header').addClass("dark-theme").eq(nextSlide).removeClass("dark-theme")
 });
 }
-
 function initSliderItems() {
   $('.slider-for').slick({
     slidesToShow: 1,
@@ -36,7 +28,6 @@ function initSliderItems() {
   });
   $('.contant__bottom-slider').slick({
     slidesToShow: 4,
-    slidesToScroll: 1,
     nextArrow: "<img src='assets/svg/slider-items/arr-right.svg' class='arr-right-black' alt=''>",
     prevArrow: "<img src='assets/svg/slider-items/arr-left.svg' class='arr-left-black' alt=''>",
     responsive: [
@@ -63,11 +54,7 @@ function initSliderItems() {
       },
     ]
   });
-
-
 }
-
-
 export default function initSliders() {
     initSliderHomepage();
     initSliderItems();

@@ -1,4 +1,3 @@
-// всплывашки
 export default function initPopups(){
 	$(document).ready(() => {
 		$('.show-popup').magnificPopup({ 
